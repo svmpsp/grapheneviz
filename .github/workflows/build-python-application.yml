@@ -1,0 +1,35 @@
+name: Build python application
+run-name: ${{ github.actor }} is building the Python package
+on: 
+  [push]
+jobs:
+  Build-Python-Application:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Setup Arkana repo access
+        run: |
+          echo "Hello world"
+          mkdir "$HOME/.ssh"
+          echo '${{ secrets.ARKANA_BUILD_KEY }}' > "$HOME/.ssh/id_rsa"
+          chmod 400 ~/.ssh/id_rsa
+      - name: Download Arkana build tools
+        run: |
+          make
+      - name: Install poetry
+        run: |
+          python3 --version
+          python3 -m pip install -U pip
+          python3 -m pip install poetry
+          poetry --version
+      - name: Install development environment
+        run: |
+          poetry install
+      - name: Build python application
+        run: |
+          make python-build
+      - run: echo "TBD - publish Python to PyPI"

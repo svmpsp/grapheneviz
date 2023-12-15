@@ -1,12 +1,21 @@
 [tool.poetry]
-name = "svmpsp-grapheneviz"
+name = "svmpsp-graphnetviz"
 version = "0.1.0"
 description = "Graph generation and visualization tool."
 authors = ["Sivam Pasupathipillai <sivam.pasupathipillai@gmail.com>"]
 readme = "README.md"
+packages = [{include = "svmpsp_graphnetviz"}]
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pylint = "^3.0.3"
+black = "^23.12.0"
+isort = "^5.13.2"
+mypy = "^1.7.1"
+pytest-cov = "^4.1.0"
 
 [build-system]
 requires = ["poetry-core"]
