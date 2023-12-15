@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "svmpsp-grapheneviz"
+version = "0.1.0"
+description = "Graph generation and visualization tool."
+authors = ["Sivam Pasupathipillai <sivam.pasupathipillai@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
