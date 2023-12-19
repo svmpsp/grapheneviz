@@ -1,6 +1,6 @@
-# GraphEneViz
+# GraphNetViz
 
-Generate and visualize graphs.
+Generate and visualize network graphs.
 
 ## Requirement analysis
 

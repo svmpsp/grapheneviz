@@ -1,3 +1,7 @@
-arkana_build_tools
+.arkana_build_cache
+.coverage
+.venv
+.pytest_cache
+__pycache__
+arkana-build-tools
 dist/
-build/
