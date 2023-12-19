@@ -17,6 +17,19 @@ isort = "^5.13.2"
 mypy = "^1.7.1"
 pytest-cov = "^4.1.0"
 
+[tool.poetry.scripts]
+gnv = "svmpsp_graphnetviz.cli:entrypoint"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+addopts = "--cov=svmpsp_graphnetviz --cov-fail-under=100  --cov-report term-missing --maxfail=1 --verbosity=2"
