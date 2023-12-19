@@ -1,5 +1,7 @@
 # GraphNetViz
 
+![example workflow](https://github.com/svmpsp/graphnetviz/actions/workflows/build-python-application.yml/badge.svg)
+
 Generate and visualize network graphs.
 
 ## Requirement analysis
