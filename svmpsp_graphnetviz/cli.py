@@ -12,6 +12,7 @@ from .constants import (
     DEFAULT_NETWORK_TYPE,
     NETWORK_TYPES,
 )
+from .generate import generate_network
 
 
 def configure_logging(config: AppConfig):
@@ -25,7 +26,6 @@ def configure_logging(config: AppConfig):
         format=DEFAULT_LOG_FORMAT,
         datefmt=DEFAULT_LOG_DATE_FORMAT,
     )
-    logging.info("BLAh")
 
 
 def parse_config() -> AppConfig:
@@ -53,14 +53,22 @@ def parse_config() -> AppConfig:
         help="Number of network nodes.",
         type=int,
     )
-
+    parser.add_argument(
+        "-o",
+        "--output",
+        default="./gnv_output",
+        dest="output_file",
+        help="Output file to store the generated data.",
+        type=str,
+    )
     parser.add_argument(
         "-t",
         "--type",
         choices=NETWORK_TYPES,
-        dest="type",
-        type=str,
         default=DEFAULT_NETWORK_TYPE,
+        dest="network_type",
+        help="Type of network to be generated.",
+        type=str,
     )
     return parser.parse_args()
 
@@ -69,4 +77,5 @@ def entrypoint():
     """Main application entrypoint."""
     conf = parse_config()
     configure_logging(conf)
-    print("Hello world!")
+
+    generate_network(conf)

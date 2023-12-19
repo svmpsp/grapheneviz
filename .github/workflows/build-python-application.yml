@@ -13,7 +13,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Arkana repo access
         run: |
-          echo "Hello world"
           mkdir "$HOME/.ssh"
           echo '${{ secrets.ARKANA_BUILD_KEY }}' > "$HOME/.ssh/id_rsa"
           chmod 400 ~/.ssh/id_rsa
