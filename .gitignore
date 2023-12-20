@@ -5,6 +5,5 @@
 __pycache__
 arkana-build-tools
 dist/
-docs-out/
 lib/
 output/
