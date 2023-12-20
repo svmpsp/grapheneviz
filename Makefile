@@ -9,3 +9,4 @@ $(ARKANA_BUILD_TOOLS_DIR):
 
 -include $(ARKANA_BUILD_MAKEFILES_DIR)/common.mk
 -include $(ARKANA_BUILD_MAKEFILES_DIR)/python.mk
+-include $(ARKANA_BUILD_MAKEFILES_DIR)/sphinx.mk
