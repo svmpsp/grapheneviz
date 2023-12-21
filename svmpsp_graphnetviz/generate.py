@@ -1,11 +1,11 @@
 """Graph generation utilities."""
 import networkx as nx
 
-from .adt import AppConfig, Graph
+from .adt import AppConfig, NetworkGraph
 from .graphics import print_adjacency_matrix, to_html
 
 
-def generate_graph(num_nodes: int, network_type: str) -> Graph:
+def generate_graph(num_nodes: int, network_type: str) -> NetworkGraph:
     """Generates a graph of a given type with the specified number of nodes.
 
     :param num_nodes: number of nodes to generate.

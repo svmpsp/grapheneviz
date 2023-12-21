@@ -6,4 +6,4 @@ import networkx
 AppConfig = argparse.Namespace
 """Type for the application configuration."""
 
-Graph = networkx.Graph
+NetworkGraph = networkx.Graph

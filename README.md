@@ -15,3 +15,7 @@ Documentation site [available here](https://svmpsp.github.io/graphnetviz/).
 * Provides a CLI for setup and data generation
 * Provides a web UI for data generation and visualization
 * Run locally on localhost
+
+## Development notes
+
+* Is it possible to host a webapp on github pages?
