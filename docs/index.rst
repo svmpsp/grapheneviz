@@ -11,6 +11,8 @@ fringilla sagittis. Aliquam erat volutpat. Vivamus vitae ornare magna.
 Nam tempus elementum scelerisque. Integer non semper sapien. Integer non arcu imperdiet, aliquet
 enim eget, scelerisque massa. Maecenas id maximus metus.
 
+`WEB APPLICATION <https://svmpsp.github.io/graphnetviz/app.html>`_
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:

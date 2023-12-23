@@ -7,6 +7,8 @@ Generate and visualize network graphs.
 
 Documentation site [available here](https://svmpsp.github.io/graphnetviz/).
 
+Web application [available here](https://svmpsp.github.io/graphnetviz/app.html).
+
 ## Requirement analysis
 
 * Developed in Python with an optional Javascript UI
